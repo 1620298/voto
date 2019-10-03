@@ -42,9 +42,6 @@ public class voto {
         myuser.setPassword("123");
         myuser.setValid(true);
         
-        
-        
-        
         UserDAO dao=new UserDAO();
         UserDTO myuser_result =dao.Signup(myuser);
         
