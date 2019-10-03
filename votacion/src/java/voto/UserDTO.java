@@ -12,30 +12,15 @@ import java.util.Vector;
  * @author LAB-USR-CAQP-C0203
  */
 public class UserDTO {
-    private String username;
+    private String dni;
     private String password;
     private String firstname;
     private String lastname;
-    private Vector<String> direccion;
+    
     public boolean valid;
 
-    public Vector<String> getDireccion() {
-        return direccion;
-    }
+ 
 
-    public void setDireccion(Vector<String> direccion) {
-        this.direccion = direccion;
-    }
-    
-
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public String getPassword() {
         return password;

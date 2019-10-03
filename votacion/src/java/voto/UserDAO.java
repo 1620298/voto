@@ -21,7 +21,7 @@ public class UserDAO {
     public static UserDTO login(UserDTO bean){
         Statement stmt=null;
         
-        String username=bean.getUsername();
+        String username=bean.getDni();
         String password=bean.getPassword();
         
         String searchQuery="select*from users u inner join direcciones d on u.id=d.users where username= '"+ username+ "' AND password='"+password+"' ";
@@ -55,7 +55,7 @@ public class UserDAO {
                     bean.setValid(true);
                     
             }while(rs.next());
-            bean.setDireccion(temp);
+            
             
             
             
@@ -104,7 +104,7 @@ public class UserDAO {
         
         String firstname=bean.getFirstname();
         String lastname=bean.getLastname();
-        String username=bean.getUsername();
+        String username=bean.getDni();
         String password=bean.getPassword();
         
         String insertQuery="insert into users (username, password, firstname, lastname, valid) values(?/?/?/?/?)";

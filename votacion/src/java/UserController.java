@@ -36,10 +36,10 @@ public class UserController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try  {
             UserDTO user=new UserDTO();
-            user.setUsername(request.getParameter("un"));
+            user.setDni(request.getParameter("dni"));
             user.setPassword(request.getParameter("pw"));
             
-            System.out.println("username: "+ request.getParameter("un"));
+            System.out.println("dni: "+ request.getParameter("dni"));
             System.out.println("password: "+ request.getParameter("pw"));
             
             user= UserDAO.login(user);

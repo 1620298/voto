@@ -38,12 +38,12 @@ public class voto {
         
         myuser.setFirstname("gianpiero");
         myuser.setLastname("montemayor");
-        myuser.setUsername("gian");
+        myuser.setDni("71978865");
         myuser.setPassword("123");
         myuser.setValid(true);
-        Vector<String> direccion=new Vector<String>();
-        direccion.add("Av. Ejercito 666");
-        myuser.setDireccion(direccion);
+        
+        
+        
         
         UserDAO dao=new UserDAO();
         UserDTO myuser_result =dao.Signup(myuser);
