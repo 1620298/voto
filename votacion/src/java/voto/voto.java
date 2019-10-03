@@ -17,7 +17,7 @@ public class voto {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hola");
+        
         //UserDTO myuser=new UserDTO();
         //myuser.setUsername("vicente");
         //myuser.setPassword("123");
@@ -34,16 +34,16 @@ public class voto {
         //System.out.println(myuser_result.getLastname());
         
         ////////////////////////////////////
-        UserDTO myuser=new UserDTO();
+        //UserDTO myuser=new UserDTO();
         
-        myuser.setFirstname("gianpiero");
-        myuser.setLastname("montemayor");
-        myuser.setDni("71978865");
-        myuser.setPassword("123");
-        myuser.setValid(true);
+        //myuser.setFirstname("gianpiero");
+        //myuser.setLastname("montemayor");
+        //myuser.setDni("71978865");
+        //myuser.setPassword("123");
+        //myuser.setValid(true);
         
-        UserDAO dao=new UserDAO();
-        UserDTO myuser_result =dao.Signup(myuser);
+        //UserDAO dao=new UserDAO();
+        //UserDTO myuser_result =dao.Signup(myuser);
         
         
     }

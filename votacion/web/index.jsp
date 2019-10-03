@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<%-- 
+    Document   : index
+    Created on : 26/09/2019, 07:24:39 PM
+    Author     : LAB-USR-CAQP-C0203
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <html lang="en">
 <head>
 	<title>Iniciar Sesion</title>
@@ -38,11 +45,11 @@
                                                 iniciar Sesion
 					</span>
                                     
-					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type user name">
+					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Escriba su DNI">
 						<input id="first-name" class="input100" type="text" name="username" placeholder="DNI">
 						<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
+					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Escriba su contraseña">
 						<input class="input100" type="password" name="pass" placeholder="Contraseña">
 						<span class="focus-input100"></span>
 					</div>
