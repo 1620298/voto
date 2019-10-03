@@ -12,7 +12,7 @@
         <title>Sign up</title>
     </head>
     <body>
-        <form action="UserController" method="post">
+        <form action="UserSignup" method="post">
             
             Please enter your firstname
             <input type="text" name="fn"/><br>
@@ -27,8 +27,8 @@
             
             
             
-            Please enter your username
-            <input type="text" name="un"/><br>
+            Please enter your dni
+            <input type="text" name="dni"/><br>
             
             Please enter your password
             <input type="text" name="pw"/>

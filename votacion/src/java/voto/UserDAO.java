@@ -99,28 +99,34 @@ public class UserDAO {
     
    
 
-    public static UserDTO Signup(UserDTO bean) {
+    public static  boolean Signup(UserDTO bean) {
         Statement stmt=null;
         
+        String dni=bean.getDni();
+        String password=bean.getPassword();
         String firstname=bean.getFirstname();
         String lastname=bean.getLastname();
-        String username=bean.getDni();
-        String password=bean.getPassword();
         
-        String insertQuery="insert into users (username, password, firstname, lastname, valid) values(?/?/?/?/?)";
+        
+        String insertQuery="insert into user (dni, password, firstname, lastname) values('"+dni+"', '"+password+"', '"+firstname+"', '"+lastname+"')";
         
         System.out.println("Your firstname is "+ firstname);
         System.out.println("Your lastname is "+ lastname);
-        System.out.println("Your username is "+ username);
+        System.out.println("Your dni is "+ dni);
         System.out.println("Your password is "+ password);
+        
+        
+        
         
         try{
             currentCon = ConnectionManager.getConnection();
             stmt=currentCon.createStatement();
-            rs=stmt.executeQuery(insertQuery);
-            boolean more=rs.next();
             
-            Vector<String> temp=new Vector<String>();
+            if(stmt.executeUpdate(insertQuery) == 1){
+                return true;
+            }
+            
+            
             
             
             
@@ -164,7 +170,7 @@ public class UserDAO {
         
         
         
-        return bean;
+        return false;
     
     }
 }

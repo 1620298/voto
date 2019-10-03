@@ -64,7 +64,7 @@
 					
 
 					<div class="w-full text-center">
-						<a href="#" class="txt3">
+						<a href="signup.jsp" class="txt3">
 							Registrarse
 						</a>
 					</div>
