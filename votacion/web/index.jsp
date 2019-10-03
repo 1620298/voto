@@ -46,16 +46,16 @@
 					</span>
                                     
 					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Escriba su DNI">
-						<input id="first-name" class="input100" type="text" name="username" placeholder="DNI">
+						<input id="first-name" class="input100" type="text" name="dni" placeholder="DNI">
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Escriba su contraseña">
-						<input class="input100" type="password" name="pass" placeholder="Contraseña">
+						<input class="input100" type="password" name="pw" placeholder="Contraseña">
 						<span class="focus-input100"></span>
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button type="submit" value="submit"class="login100-form-btn">
 							Iniciar Sesion
 						</button>
 					</div>
