@@ -18,20 +18,20 @@ public class voto {
      */
     public static void main(String[] args) {
         
-        UserDTO myuser=new UserDTO();
-        myuser.setDni("71978865");
-        myuser.setPassword("123");
+        //UserDTO myuser=new UserDTO();
+        //myuser.setDni("71978865");
+       // myuser.setPassword("123");
         
-        UserDAO dao=new UserDAO();
-        UserDTO myuser_result = dao.login(myuser);
-        
-        
+        //UserDAO dao=new UserDAO();
+       // UserDTO myuser_result = dao.login(myuser);
         
         
         
         
-        System.out.println(myuser_result.getFirstname());
-        System.out.println(myuser_result.getLastname());
+        
+        
+       // System.out.println(myuser_result.getFirstname());
+      //  System.out.println(myuser_result.getLastname());
         
         ////////////////////////////////////
         //UserDTO myuser=new UserDTO();

@@ -24,7 +24,7 @@ public class UserDAO {
         String dni=bean.getDni();
         String password=bean.getPassword();
         
-        String searchQuery="select*from user where dni= '"+ dni+ "' AND password='"+password+"' ";
+        String searchQuery="select*from persona where dni= '"+ dni+ "' AND password='"+password+"' ";
         
         System.out.println("Your dni is "+ dni);
         System.out.println("Your password is "+ password);
@@ -41,8 +41,8 @@ public class UserDAO {
             
             
             do{
-                String firstname=rs.getString("Firstname");
-                String lastname=rs.getString("Lastname");
+                String firstname=rs.getString("nombres");
+                String lastname=rs.getString("apellidos");
                     
                     
                     
@@ -108,7 +108,7 @@ public class UserDAO {
         String lastname=bean.getLastname();
         
         
-        String insertQuery="insert into user (dni, password, firstname, lastname) values('"+dni+"', '"+password+"', '"+firstname+"', '"+lastname+"')";
+        String insertQuery="insert into persona (dni, password, nombres, apellidos) values('"+dni+"', '"+password+"', '"+firstname+"', '"+lastname+"')";
         
         System.out.println("Your firstname is "+ firstname);
         System.out.println("Your lastname is "+ lastname);
