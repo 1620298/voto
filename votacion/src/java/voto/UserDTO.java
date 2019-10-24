@@ -19,7 +19,7 @@ public class UserDTO {
     private String dni;
     private String firstname;
     private String lastname;
-    private int ubigeo;
+    private String ubigeo;
     private String direccion;
     private String sexo;
     private String estado_civil;
@@ -33,14 +33,16 @@ public class UserDTO {
     
     public boolean valid;
 
-   
-    public int getUbigeo() {
+    public String getUbigeo() {
         return ubigeo;
     }
 
-    public void setUbigeo(int ubigeo) {
+    public void setUbigeo(String ubigeo) {
         this.ubigeo = ubigeo;
     }
+
+   
+    
 
     public String getDireccion() {
         return direccion;

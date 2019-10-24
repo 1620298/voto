@@ -106,9 +106,19 @@ public class UserDAO {
         String password=bean.getPassword();
         String firstname=bean.getFirstname();
         String lastname=bean.getLastname();
+        String ubigeo=bean.getUbigeo();
+        String direccion=bean.getDireccion();
+        String sexo=bean.getSexo();
+        String estado_civil=bean.getEstado_civil();
+        String fecha_caducidad=bean.getFecha_caducidad();
+        String foto=bean.getFoto();
+        String firma=bean.getFirma();
+        String huella_digital=bean.getHuella_digital();
         
         
-        String insertQuery="insert into persona (dni, password, nombres, apellidos) values('"+dni+"', '"+password+"', '"+firstname+"', '"+lastname+"')";
+        
+        
+        String insertQuery="insert into persona (dni, nombres, apellidos, ubigeo, direccion, sexo, estado_civil, fecha_caducidad, foto, firma, huella_digital, password) values('"+dni+"', '"+firstname+"', '"+lastname+"', '"+ubigeo+"', '"+direccion+"', '"+sexo+"', '"+estado_civil+"', '"+fecha_caducidad+"', '"+foto+"', '"+firma+"', '"+huella_digital+"', '"+password+"')";
         
         System.out.println("Your firstname is "+ firstname);
         System.out.println("Your lastname is "+ lastname);
