@@ -36,6 +36,7 @@ public class UserSignup extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try  {
             UserDTO user=new UserDTO();
+            
             user.setDni(request.getParameter("dni"));
             user.setPassword(request.getParameter("pw"));
             user.setFirstname(request.getParameter("fn"));
