@@ -10,18 +10,20 @@ package voto;
  * @author Gianpiero
  */
 public class local {
-    private String id_local;
+    private int id_local;
     private String direccion;
     private String codigo;
     private String ubigeo;
 
-    public String getId_local() {
+    public int getId_local() {
         return id_local;
     }
 
-    public void setId_local(String id_local) {
+    public void setId_local(int id_local) {
         this.id_local = id_local;
     }
+
+    
 
     public String getCodigo() {
         return codigo;

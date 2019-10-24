@@ -11,7 +11,7 @@ package voto;
  */
 public class mesa {
     private int id_mesa;
-    private int id_local;
+    private String id_local;
 
     
     
@@ -25,14 +25,16 @@ public class mesa {
         this.id_mesa = id_mesa;
     }
 
-
-    public int getId_local() {
+    public String getId_local() {
         return id_local;
     }
 
-    public void setId_local(int id_local) {
+    public void setId_local(String id_local) {
         this.id_local = id_local;
     }
+
+
+    
     
     
     

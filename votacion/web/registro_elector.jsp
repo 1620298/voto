@@ -18,7 +18,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Registro de local</title>
+    <title>Registro de elector</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -40,17 +40,15 @@
             <div class="card card-2">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registro de Local</h2>
-                    <form method="POST" action="localRegister">
+                    <h2 class="title">Registro de Elector</h2>
+                    <form method="POST" action="electorRegister">
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Direccion" name="direccion">
+                            <input class="input--style-2" type="text" placeholder="ID de la persona" name="id_persona">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Codigo" name="codigo">
+                            <input class="input--style-2" type="text" placeholder="ID de la mesa de votacion" name="id_mesa">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Ubigeo" name="ubigeo">
-                        </div>
+                        
                         
                         <div class="p-t-30">
                             <button class="btn btn--radius btn--green" type="submit">Registrarse</button>

@@ -41,7 +41,7 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Registro de Mesa</h2>
-                    <form method="POST" action="UserSignup">
+                    <form method="POST" action="mesaRegister">
                         
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="ID del local" name="id_local">

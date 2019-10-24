@@ -18,7 +18,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Registro de local</title>
+    <title>Registro de miembros de mesa</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -40,16 +40,16 @@
             <div class="card card-2">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registro de Local</h2>
-                    <form method="POST" action="localRegister">
+                    <h2 class="title">Registro de Miembro de Mesa</h2>
+                    <form method="POST" action="miembroRegister">
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Direccion" name="direccion">
+                            <input class="input--style-2" type="text" placeholder="Tipo de miembro de mesa" name="tipo">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Codigo" name="codigo">
+                            <input class="input--style-2" type="text" placeholder="ID de la persona" name="id_persona">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Ubigeo" name="ubigeo">
+                            <input class="input--style-2" type="text" placeholder="ID de la mesa" name="id_mesa">
                         </div>
                         
                         <div class="p-t-30">

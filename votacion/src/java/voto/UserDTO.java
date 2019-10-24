@@ -12,7 +12,7 @@ import java.util.Vector;
  * @author LAB-USR-CAQP-C0203
  */
 public class UserDTO {
-    private int id_persona;
+    private String id_persona;
     
     
     
@@ -140,13 +140,15 @@ public class UserDTO {
         this.valid = valid;
     }
 
-    public int getId_persona() {
+    public String getId_persona() {
         return id_persona;
     }
 
-    public void setId_persona(int id_persona) {
+    public void setId_persona(String id_persona) {
         this.id_persona = id_persona;
     }
+
+    
 
     public String getEstado_civil() {
         return estado_civil;

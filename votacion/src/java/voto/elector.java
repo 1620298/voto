@@ -9,19 +9,22 @@ package voto;
  *
  * @author Gianpiero
  */
-public class elector {
+public class elector extends UserDTO{
     private int id_elector;
-    private int id_mesa;
     
+    private String id_mesa;
 
-    
-    public int getId_mesa() {
+    public String getId_mesa() {
         return id_mesa;
     }
 
-    public void setId_mesa(int id_mesa) {
+    public void setId_mesa(String id_mesa) {
         this.id_mesa = id_mesa;
     }
+    
+
+    
+    
 
     public int getId_elector() {
         return id_elector;

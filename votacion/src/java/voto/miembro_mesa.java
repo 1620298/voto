@@ -13,8 +13,9 @@ public class miembro_mesa extends UserDTO{
     
     
     private int id_miembro;
+    
     private String tipo;
-    private int id_mesa;
+    private String id_mesa;
     
     
     
@@ -26,7 +27,7 @@ public class miembro_mesa extends UserDTO{
     public void setId_miembro(int id_miembro) {
         this.id_miembro = id_miembro;
     }
-    
+
     
 
     
@@ -39,15 +40,15 @@ public class miembro_mesa extends UserDTO{
         this.tipo = tipo;
     }
 
-    
-
-    public int getId_mesa() {
+    public String getId_mesa() {
         return id_mesa;
     }
 
-    public void setId_mesa(int id_mesa) {
+    public void setId_mesa(String id_mesa) {
         this.id_mesa = id_mesa;
     }
+
+    
 
     
     
