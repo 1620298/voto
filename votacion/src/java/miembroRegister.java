@@ -21,7 +21,7 @@ import voto.miembro_mesaDAO;
  *
  * @author Gianpiero
  */
-@WebServlet(urlPatterns = {"/UserSignup"})
+@WebServlet(urlPatterns = {"/miembroRegister"})
 public class miembroRegister extends HttpServlet {
 
     /**

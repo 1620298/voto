@@ -21,7 +21,7 @@ import voto.electorDAO;
  *
  * @author Gianpiero
  */
-@WebServlet(urlPatterns = {"/UserSignup"})
+@WebServlet(urlPatterns = {"/electorRegister"})
 public class electorRegister extends HttpServlet {
 
     /**

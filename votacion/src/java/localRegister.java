@@ -21,7 +21,7 @@ import voto.localDAO;
  *
  * @author Gianpiero
  */
-@WebServlet(urlPatterns = {"/UserSignup"})
+@WebServlet(urlPatterns = {"/localRegister"})
 public class localRegister extends HttpServlet {
 
     /**
