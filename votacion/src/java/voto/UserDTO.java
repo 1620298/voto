@@ -24,9 +24,7 @@ public class UserDTO {
     private String sexo;
     private String estado_civil;
     private String fecha_caducidad;
-    private String foto;
-    private String firma;
-    private String huella_digital;
+    
     
     
     private String password;
@@ -69,30 +67,6 @@ public class UserDTO {
         this.fecha_caducidad = fecha_caducidad;
     }
 
-    public String getFoto() {
-        return foto;
-    }
-
-    public void setFoto(String foto) {
-        this.foto = foto;
-    }
-
-    public String getFirma() {
-        return firma;
-    }
-
-    public void setFirma(String firma) {
-        this.firma = firma;
-    }
-
-    public String getHuella_digital() {
-        return huella_digital;
-    }
-
-    public void setHuella_digital(String huella_digital) {
-        this.huella_digital = huella_digital;
-    }
-    
     
     
     

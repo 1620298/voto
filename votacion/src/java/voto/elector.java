@@ -10,9 +10,14 @@ package voto;
  * @author Gianpiero
  */
 public class elector extends UserDTO{
+    
     private int id_elector;
     
     private String id_mesa;
+    
+    
+    
+    
 
     public String getId_mesa() {
         return id_mesa;

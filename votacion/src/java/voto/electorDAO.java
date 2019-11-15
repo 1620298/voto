@@ -21,33 +21,50 @@ public class electorDAO {
     public static  boolean Signup(elector bean) {
         Statement stmt=null;
         
+        
         String dni=bean.getDni();
-        String password=bean.getPassword();
-        String firstname=bean.getFirstname();
-        String lastname=bean.getLastname();
-        String ubigeo=bean.getUbigeo();
-        String direccion=bean.getDireccion();
-        String sexo=bean.getSexo();
-        String estado_civil=bean.getEstado_civil();
-        String fecha_caducidad=bean.getFecha_caducidad();
-        String foto=bean.getFoto();
-        String firma=bean.getFirma();
-        String huella_digital=bean.getHuella_digital();
-        
         String id_mesa=bean.getId_mesa();
-        String id_persona=bean.getId_persona();
         
-        String insertQuery="insert into elector (id_persona, id_mesa) values('"+id_persona +"', '"+id_mesa +"')";
         
-        System.out.println("Your firstname is "+ firstname);
-        System.out.println("Your lastname is "+ lastname);
-        System.out.println("Your dni is "+ dni);
-        System.out.println("Your password is "+ password);
+        String searchQuery="select*from persona where dni= '"+ dni+ "";
+        
+        
+        
+        
+        //String id_mesa=bean.getId_mesa();
+        //String id_persona=bean.getId_persona();
+        
+        //String insertQuery="insert into elector (id_persona, id_mesa) values('"+id_persona +"', '"+id_mesa +"')";
         
         
         
         
         try{
+            currentCon = ConnectionManager.getConnection();
+            stmt=currentCon.createStatement();
+            rs=stmt.executeQuery(searchQuery);
+            
+            boolean more=rs.next();
+            
+           
+            
+            
+            do{
+                String id_persona=rs.getString("id_persona");
+                
+                    
+                    
+                    
+                    
+                System.out.println("welcome "+ id_persona);
+                bean.setId_persona(id_persona);
+                
+                
+                
+                
+                String insertQuery="insert into elector (id_persona, id_mesa) values('"+id_persona +"', '"+id_mesa +"')";
+                
+                try{
             currentCon = ConnectionManager.getConnection();
             stmt=currentCon.createStatement();
             
@@ -101,5 +118,53 @@ public class electorDAO {
         
         return false;
     
+    
+      
+                
+                    
+                    
+                
+                    
+            }while(rs.next());
+            
+            
+            
+            
+        }
+        catch(Exception ex){
+            System.out.println("Log in failed: An exception has ocurred "+ ex);
+        }
+        
+        finally{
+            if(rs!=null){
+                try{
+                    rs.close();
+                }catch(Exception e){
+                    
+                }
+                
+                if(stmt!=null){
+                    try{
+                        stmt.close();
+                    }catch(Exception e){
+                        
+                    }
+                    stmt=null;
+                }
+                
+                if(currentCon !=null){
+                    try{
+                        currentCon.close();
+                    }catch (Exception e){
+                        
+                    }
+                    currentCon=null;
+                }
+                
+            }
+            
+        }
+        
+        return false;
     }
 }

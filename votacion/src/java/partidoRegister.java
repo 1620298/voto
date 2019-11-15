@@ -39,6 +39,10 @@ public class partidoRegister extends HttpServlet {
             partido partido=new partido();
             
             
+            partido.setId_partido("id_partido");
+            partido.setDescripcion("descripcion");
+            partido.setLogo("logo");
+            partido.setNombre("nombre");
             
             
             
@@ -46,11 +50,12 @@ public class partidoRegister extends HttpServlet {
             
             
             
-            UserDAO user1=new UserDAO();
+            
+            partidoDAO partido1=new partidoDAO();
             
             
             
-            if(user1.Signup(user)){
+            if(partido1.Signup(partido)){
                 
                
                

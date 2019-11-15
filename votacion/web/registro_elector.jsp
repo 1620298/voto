@@ -43,7 +43,7 @@
                     <h2 class="title">Registro de Elector</h2>
                     <form method="POST" action="electorRegister">
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="ID de la persona" name="id_persona">
+                            <input class="input--style-2" type="text" placeholder="DNI" name="dni">
                         </div>
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="ID de la mesa de votacion" name="id_mesa">

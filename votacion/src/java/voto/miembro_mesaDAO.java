@@ -23,36 +23,49 @@ public class miembro_mesaDAO {
         Statement stmt=null;
         
         String dni=bean.getDni();
-        String password=bean.getPassword();
-        String firstname=bean.getFirstname();
-        String lastname=bean.getLastname();
-        String ubigeo=bean.getUbigeo();
-        String direccion=bean.getDireccion();
-        String sexo=bean.getSexo();
-        String estado_civil=bean.getEstado_civil();
-        String fecha_caducidad=bean.getFecha_caducidad();
-        String foto=bean.getFoto();
-        String firma=bean.getFirma();
-        String huella_digital=bean.getHuella_digital();
         
         
         String tipo=bean.getTipo();
-        String id_persona=bean.getId_persona();
+        
         String id_mesa=bean.getId_mesa();
         
         
         
-        String insertQuery="insert into miembro_mesa (tipo, id_persona, id_mesa) values('"+tipo+"', '"+id_persona+"', '"+id_mesa+"')";
+        String searchQuery="select*from persona where dni= '"+ dni+ "";
         
-        System.out.println("Your firstname is "+ firstname);
-        System.out.println("Your lastname is "+ lastname);
-        System.out.println("Your dni is "+ dni);
-        System.out.println("Your password is "+ password);
+        
+        //String insertQuery="insert into persona (dni, nombres, apellidos, ubigeo, direccion, sexo, estado_civil, fecha_caducidad, password) values('"+dni+"', '"+firstname+"', '"+lastname+"', '"+ubigeo+"', '"+direccion+"', '"+sexo+"', '"+estado_civil+"', '"+fecha_caducidad+"', '"+password+"')";
         
         
         
         
-        try{
+        
+       try{
+            currentCon = ConnectionManager.getConnection();
+            stmt=currentCon.createStatement();
+            rs=stmt.executeQuery(searchQuery);
+            
+            boolean more=rs.next();
+            
+           
+            
+            
+            do{
+                String id_persona=rs.getString("id_persona");
+                
+                    
+                    
+                    
+                    
+                System.out.println("welcome "+ id_persona);
+                bean.setId_persona(id_persona);
+                
+                
+                
+                
+                String insertQuery="insert into miembro (tipo, id_persona, id_mesa) values('"+tipo +"', '"+id_persona +"', '"+id_mesa+"')";
+                
+                try{
             currentCon = ConnectionManager.getConnection();
             stmt=currentCon.createStatement();
             
@@ -106,5 +119,53 @@ public class miembro_mesaDAO {
         
         return false;
     
+    
+      
+                
+                    
+                    
+                
+                    
+            }while(rs.next());
+            
+            
+            
+            
+        }
+        catch(Exception ex){
+            System.out.println("Log in failed: An exception has ocurred "+ ex);
+        }
+        
+        finally{
+            if(rs!=null){
+                try{
+                    rs.close();
+                }catch(Exception e){
+                    
+                }
+                
+                if(stmt!=null){
+                    try{
+                        stmt.close();
+                    }catch(Exception e){
+                        
+                    }
+                    stmt=null;
+                }
+                
+                if(currentCon !=null){
+                    try{
+                        currentCon.close();
+                    }catch (Exception e){
+                        
+                    }
+                    currentCon=null;
+                }
+                
+            }
+            
+        }
+        
+        return false;
     }
 }

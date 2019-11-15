@@ -1,0 +1,11 @@
+to do list:
+registro mesa
+registro local
+primero el local
+para encontrar la mesa
+crear interfaces paratodo
+crear para admin
+aprender ajax
+todo en 2 semanas
+3 horas x dia
+vamos

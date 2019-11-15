@@ -12,24 +12,21 @@ package voto;
 public class miembro_mesa extends UserDTO{
     
     
-    private int id_miembro;
+    private String id_miembro;
     
     private String tipo;
     private String id_mesa;
-    
-    
-    
 
-    public int getId_miembro() {
+    public String getId_miembro() {
         return id_miembro;
     }
 
-    public void setId_miembro(int id_miembro) {
+    public void setId_miembro(String id_miembro) {
         this.id_miembro = id_miembro;
     }
-
     
-
+    
+    
     
 
     public String getTipo() {
