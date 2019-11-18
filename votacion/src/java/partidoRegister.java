@@ -39,10 +39,9 @@ public class partidoRegister extends HttpServlet {
             partido partido=new partido();
             
             
-            partido.setId_partido("id_partido");
-            partido.setDescripcion("descripcion");
-            partido.setLogo("logo");
-            partido.setNombre("nombre");
+            partido.setId_partido(request.getParameter("id_partido"));
+            partido.setDescripcion(request.getParameter("descripcion"));
+            partido.setNombre(request.getParameter("nombre"));
             
             
             

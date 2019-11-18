@@ -49,9 +49,13 @@ public class UserSignup extends HttpServlet {
             user.setEstado_civil(request.getParameter("estado_civil"));
             user.setDni(request.getParameter("dni"));
             user.setFecha_caducidad(request.getParameter("fecha_caducidad"));
-            
-            
             user.setPassword(request.getParameter("pw"));
+            
+            
+            
+            
+            
+            
             UserDAO user1=new UserDAO();
             
             

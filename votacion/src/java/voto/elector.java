@@ -11,7 +11,7 @@ package voto;
  */
 public class elector extends UserDTO{
     
-    private int id_elector;
+    private String id_elector;
     
     private String id_mesa;
     
@@ -26,18 +26,18 @@ public class elector extends UserDTO{
     public void setId_mesa(String id_mesa) {
         this.id_mesa = id_mesa;
     }
-    
 
-    
-    
-
-    public int getId_elector() {
+    public String getId_elector() {
         return id_elector;
     }
 
-    public void setId_elector(int id_elector) {
+    public void setId_elector(String id_elector) {
         this.id_elector = id_elector;
     }
+    
+
+    
+    
 
     
 

@@ -24,14 +24,14 @@ public class localDAO {
         Statement stmt=null;
         
         String direccion=bean.getDireccion();
-        String codigo=bean.getCodigo();
+        
         String ubigeo=bean.getUbigeo();
         
         
         
         
         
-        String insertQuery="insert into local (direccion, codigo, ubigeo) values('"+direccion+"', '"+codigo+"', '"+ubigeo+"')";
+        String insertQuery="insert into local (direccion, ubigeo) values('"+direccion+"', '"+ubigeo+"')";
         
         
         

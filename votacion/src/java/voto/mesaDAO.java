@@ -29,13 +29,29 @@ public class mesaDAO {
         
         
         
-        String insertQuery="insert into mesa(id_local) values('"+id_local+"')";
+        //String insertQuery="insert into mesa(id_local) values('"+id_local+"')";
+        String searchQuery="select*from local where id_local= '"+ id_local+ "";
         
         
         
         
-        
-        try{
+      try{
+            currentCon = ConnectionManager.getConnection();
+            stmt=currentCon.createStatement();
+            rs=stmt.executeQuery(searchQuery);
+            
+            boolean more=rs.next();
+            
+           
+            
+            
+            do{
+                
+                
+                
+                String insertQuery="insert into mesa (id_local) values('"+id_local +"')";
+                
+                try{
             currentCon = ConnectionManager.getConnection();
             stmt=currentCon.createStatement();
             
@@ -89,5 +105,53 @@ public class mesaDAO {
         
         return false;
     
+    
+      
+                
+                    
+                    
+                
+                    
+            }while(rs.next());
+            
+            
+            
+            
+        }
+        catch(Exception ex){
+            System.out.println("Log in failed: An exception has ocurred "+ ex);
+        }
+        
+        finally{
+            if(rs!=null){
+                try{
+                    rs.close();
+                }catch(Exception e){
+                    
+                }
+                
+                if(stmt!=null){
+                    try{
+                        stmt.close();
+                    }catch(Exception e){
+                        
+                    }
+                    stmt=null;
+                }
+                
+                if(currentCon !=null){
+                    try{
+                        currentCon.close();
+                    }catch (Exception e){
+                        
+                    }
+                    currentCon=null;
+                }
+                
+            }
+            
+        }
+        
+        return false;
     }
 }

@@ -12,17 +12,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import voto.UserDAO;
-import voto.UserDTO;
-import voto.mesa;
-import voto.mesaDAO;
+
+import voto.candidato;
+import voto.candidatoDAO;
 
 /**
  *
  * @author Gianpiero
  */
-@WebServlet(urlPatterns = {"/mesaRegister"})
-public class mesaRegister extends HttpServlet {
+@WebServlet(urlPatterns = {"/electorRegister"})
+public class candidatoRegister extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,21 +36,18 @@ public class mesaRegister extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try  {
-            mesa mesa=new mesa();
+            candidato candidato=new candidato();
             
-            
-                
-            mesa.setId_local(request.getParameter("id_local"));
-            
+            candidato.setDni(request.getParameter(request.getParameter("dni")));
             
             
             
             
-            mesaDAO mesa1=new mesaDAO();
+            candidatoDAO candidato1=new candidatoDAO();
             
             
             
-            if(mesa1.Signup(mesa)){
+            if(candidato1.Signup(candidato)){
                 
                
                

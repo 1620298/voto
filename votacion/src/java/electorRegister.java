@@ -38,9 +38,9 @@ public class electorRegister extends HttpServlet {
         try  {
             elector elector=new elector();
             
-            elector.setId_mesa("id_mesa");
             
-            
+            elector.setDni(request.getParameter(request.getParameter("dni")));
+            elector.setId_mesa(request.getParameter(request.getParameter("id_mesa")));
             
             electorDAO elector1=new electorDAO();
             

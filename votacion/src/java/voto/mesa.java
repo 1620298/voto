@@ -10,20 +10,22 @@ package voto;
  * @author Gianpiero
  */
 public class mesa {
-    private int id_mesa;
+    private String id_mesa;
     private String id_local;
 
-    
-    
-    
-    
-    public int getId_mesa() {
+    public String getId_mesa() {
         return id_mesa;
     }
 
-    public void setId_mesa(int id_mesa) {
+    public void setId_mesa(String id_mesa) {
         this.id_mesa = id_mesa;
     }
+
+    
+    
+    
+    
+  
 
     public String getId_local() {
         return id_local;

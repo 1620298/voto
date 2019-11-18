@@ -42,9 +42,10 @@ public class localRegister extends HttpServlet {
             
             
             
-            local.setCodigo("codigo");
-            local.setUbigeo(request.getParameter("ubigeo"));
-            local.setDireccion(request.getParameter("direccion"));
+            local.setId_local(request.getParameter(request.getParameter("id_local")));
+            local.setDireccion(request.getParameter(request.getParameter("direccion")));
+            local.setUbigeo(request.getParameter(request.getParameter("ubigeo")));
+            
             
             
             
