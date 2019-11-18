@@ -1,8 +1,4 @@
 to do list:
-registro mesa
-registro local
-primero el local
-para encontrar la mesa
 crear interfaces paratodo
 crear para admin
 aprender ajax
