@@ -12,8 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import voto.UserDAO;
-import voto.UserDTO;
+
 import voto.local;
 import voto.localDAO;
 
@@ -42,7 +41,7 @@ public class localRegister extends HttpServlet {
             
             
             
-            local.setId_local(request.getParameter(request.getParameter("id_local")));
+            
             local.setDireccion(request.getParameter(request.getParameter("direccion")));
             local.setUbigeo(request.getParameter(request.getParameter("ubigeo")));
             
@@ -57,7 +56,7 @@ public class localRegister extends HttpServlet {
                 
                
                
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("registro_local.jsp");
                 
             }else{
                 response.sendRedirect("signup.jsp");

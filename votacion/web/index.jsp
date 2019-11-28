@@ -42,7 +42,7 @@
 				<form action= "UserController" method="post" class="login100-form validate-form">
 					<span class="login100-form-title p-b-34">
 						
-                                                iniciar Sesion
+                                                Iniciar Sesion
 					</span>
                                     
 					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Escriba su DNI">

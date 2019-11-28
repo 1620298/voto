@@ -99,15 +99,7 @@
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="Direccion" name="direccion">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Foto" name="foto">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Firma" name="firma">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Huella Digital" name="huella_digital">
-                        </div>
+                        
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="Contraseña" name="pw">
                         </div>

@@ -45,15 +45,13 @@
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="Direccion" name="direccion">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Codigo" name="codigo">
-                        </div>
+                        
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="Ubigeo" name="ubigeo">
                         </div>
                         
                         <div class="p-t-30">
-                            <button class="btn btn--radius btn--green" type="submit">Registrarse</button>
+                            <button class="btn btn--radius btn--green" type="submit">Registrar</button>
                         </div>
                     </form>
                 </div>

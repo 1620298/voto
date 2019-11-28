@@ -17,10 +17,10 @@ import voto.UserDTO;
 
 /**
  *
- * @author LAB-USR-CAQP-C0203
+ * @author Gianpiero
  */
-@WebServlet(urlPatterns = {"/UserController"})
-public class UserController extends HttpServlet {
+@WebServlet(urlPatterns = {"/UserSignup"})
+public class votacion extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,22 +35,44 @@ public class UserController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try  {
+            
+            
+            
+            
+            
             UserDTO user=new UserDTO();
+            
+            
+            
+            
+            
+            user.setFirstname(request.getParameter("fn"));
+            user.setLastname(request.getParameter("ln"));
+            user.setUbigeo(request.getParameter("ubigeo"));
+            user.setDireccion(request.getParameter("direccion"));
+            user.setSexo(request.getParameter("genero"));
+            user.setEstado_civil(request.getParameter("estado_civil"));
             user.setDni(request.getParameter("dni"));
+            user.setFecha_caducidad(request.getParameter("fecha_caducidad"));
             user.setPassword(request.getParameter("pw"));
             
-            System.out.println("dni: "+ request.getParameter("dni"));
-            System.out.println("password: "+ request.getParameter("pw"));
             
-            user= UserDAO.login(user);
             
-            if(user.isValid()){
-                HttpSession session = request.getSession(true);
-                session.setAttribute("currentSessionUser", user);
-                response.sendRedirect("voto.jsp");
+            
+            
+            
+            UserDAO user1=new UserDAO();
+            
+            
+            
+            if(user1.Signup(user)){
+                
+               
+               
+                response.sendRedirect("index.jsp");
                 
             }else{
-                response.sendRedirect("invalidLogin.jsp");
+                response.sendRedirect("signup.jsp");
             }
             
         }

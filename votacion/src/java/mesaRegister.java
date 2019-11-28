@@ -12,8 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import voto.UserDAO;
-import voto.UserDTO;
+
 import voto.mesa;
 import voto.mesaDAO;
 
@@ -38,14 +37,8 @@ public class mesaRegister extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try  {
             mesa mesa=new mesa();
-            
-            
                 
             mesa.setId_local(request.getParameter("id_local"));
-            
-            
-            
-            
             
             mesaDAO mesa1=new mesaDAO();
             

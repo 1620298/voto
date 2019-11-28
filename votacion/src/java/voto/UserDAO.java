@@ -49,7 +49,7 @@ public class UserDAO {
                     
                 System.out.println("welcome "+ firstname);
                 bean.setFirstname(firstname);
-                bean.setLastname(lastname);
+                bean.setLastname(lastname); 
                     
                     
                 bean.setValid(true);

@@ -24,18 +24,9 @@ public class localDAO {
         Statement stmt=null;
         
         String direccion=bean.getDireccion();
-        
         String ubigeo=bean.getUbigeo();
         
-        
-        
-        
-        
         String insertQuery="insert into local (direccion, ubigeo) values('"+direccion+"', '"+ubigeo+"')";
-        
-        
-        
-        
         
         
         try{
@@ -45,12 +36,6 @@ public class localDAO {
             if(stmt.executeUpdate(insertQuery) == 1){
                 return true;
             }
-            
-            
-            
-            
-            
-            
             
             
         }

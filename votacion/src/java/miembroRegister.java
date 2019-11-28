@@ -40,7 +40,7 @@ public class miembroRegister extends HttpServlet {
             miembro_mesa miembro=new miembro_mesa();
             
             
-            
+            miembro.setDni(request.getParameter("dni"));
             miembro.setTipo(request.getParameter("tipo"));
             miembro.setId_mesa(request.getParameter("id_mesa"));
             

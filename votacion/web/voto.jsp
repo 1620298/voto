@@ -1,8 +1,9 @@
 <%-- 
-    Document   : signup
-    Created on : 24/10/2019, 04:05:53 AM
+    Document   : voto
+    Created on : 21/11/2019, 11:51:17 AM
     Author     : Gianpiero
 --%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -18,7 +19,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Registro de miembros de mesa</title>
+    <title>Registro de personas</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -40,19 +41,28 @@
             <div class="card card-2">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registro de Miembro de Mesa</h2>
-                    <form method="POST" action="miembroRegister">
-                        <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="DNI" name="dni">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Tipo de miembro de mesa" name="tipo">
-                        </div>
+                    <h2 class="title">VOTACION</h2>
+                    <form method="POST" action="votacion">
+                        <table border="1">
+                        <caption>Formulario de Votacion</caption>
+		<tr>
+			<th>Logo</th>
+			<th>Numero</th>
+		</tr>
+		<tr>
+                    <td><button>Elegir</button> </td>
+			<td>Celda 2</td>
+		</tr>
+		</table>
+                        
+                        
+                        
+                        
+                        
                         
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="ID de la mesa" name="id_mesa">
+                            <input class="input--style-2" type="text" placeholder="Nombres" name="fn">
                         </div>
-                        
                         <div class="p-t-30">
                             <button class="btn btn--radius btn--green" type="submit">Registrarse</button>
                         </div>
@@ -75,4 +85,3 @@
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
-<!-- end document-->

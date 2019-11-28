@@ -22,11 +22,8 @@ public class miembro_mesaDAO {
     public static  boolean Signup(miembro_mesa bean) {
         Statement stmt=null;
         
-        String dni=bean.getDni();
-        
-        
+        String dni=bean.getDni();    
         String tipo=bean.getTipo();
-        
         String id_mesa=bean.getId_mesa();
         
         
@@ -52,12 +49,6 @@ public class miembro_mesaDAO {
             
             do{
                 String id_persona=rs.getString("id_persona");
-                
-                    
-                    
-                    
-                    
-                System.out.println("welcome "+ id_persona);
                 bean.setId_persona(id_persona);
                 
                 

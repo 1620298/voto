@@ -50,10 +50,10 @@ public class electorRegister extends HttpServlet {
                 
                
                
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("registro_elector.jsp");
                 
             }else{
-                response.sendRedirect("signup.jsp");
+                response.sendRedirect("electorRegister.jsp");
             }
             
         }

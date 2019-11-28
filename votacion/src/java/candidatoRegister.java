@@ -37,7 +37,6 @@ public class candidatoRegister extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try  {
             candidato candidato=new candidato();
-            
             candidato.setDni(request.getParameter(request.getParameter("dni")));
             
             
@@ -54,7 +53,7 @@ public class candidatoRegister extends HttpServlet {
                 response.sendRedirect("index.jsp");
                 
             }else{
-                response.sendRedirect("signup.jsp");
+                response.sendRedirect("registro_candidato.jsp");
             }
             
         }

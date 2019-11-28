@@ -50,10 +50,6 @@ public class candidatoDAO {
             
             do{
                 String id_persona=rs.getString("id_persona");
-                
-                    
-                    
-                    
                     
                 System.out.println("welcome "+ id_persona);
                 bean.setId_persona(id_persona);

@@ -18,7 +18,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Registro de miembros de mesa</title>
+    <title>Registro de elector</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -40,21 +40,22 @@
             <div class="card card-2">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registro de Miembro de Mesa</h2>
-                    <form method="POST" action="miembroRegister">
+                    <h2 class="title">Registro de Candidator</h2>
+                    <form method="POST" action="candidatoRegister">
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="DNI" name="dni">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Tipo de miembro de mesa" name="tipo">
+                            <input class="input--style-2" type="text" placeholder="ID del partido politico al que pertenece" name="id_partido">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="tipo de candidato/puesto al que postula" name="tipo">
                         </div>
                         
-                        <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="ID de la mesa" name="id_mesa">
-                        </div>
+                        
                         
                         <div class="p-t-30">
-                            <button class="btn btn--radius btn--green" type="submit">Registrarse</button>
+                            <button class="btn btn--radius btn--green" type="submit">Registrar</button>
                         </div>
                     </form>
                 </div>
