@@ -22,7 +22,12 @@ public class mesaDAO {
     public static  boolean Signup(mesa bean) {
         Statement stmt=null;
         
+        
+        
         String id_local=bean.getId_local();
+        
+        
+        
         
         //String insertQuery="insert into mesa(id_local) values('"+id_local+"')";
         String searchQuery="select*from local where id_local= '"+ id_local+ "";
@@ -37,8 +42,12 @@ public class mesaDAO {
             
             boolean more=rs.next();
             
+           
+            
             
             do{
+                
+                
                 
                 String insertQuery="insert into mesa (id_local) values('"+id_local +"')";
                 
@@ -49,6 +58,11 @@ public class mesaDAO {
             if(stmt.executeUpdate(insertQuery) == 1){
                 return true;
             }
+            
+            
+            
+            
+            
             
             
             

@@ -36,18 +36,16 @@ public class UserController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try  {
             UserDTO user=new UserDTO();
-            user.setDni(request.getParameter("dni"));
-            user.setPassword(request.getParameter("pw"));
-            
+            user.setDni(request.getParameter("dni"));            
             System.out.println("dni: "+ request.getParameter("dni"));
-            System.out.println("password: "+ request.getParameter("pw"));
+            
             
             user= UserDAO.login(user);
             
             if(user.isValid()){
                 HttpSession session = request.getSession(true);
                 session.setAttribute("currentSessionUser", user);
-                response.sendRedirect("voto.jsp");
+                response.sendRedirect("userLogged.jsp");
                 
             }else{
                 response.sendRedirect("invalidLogin.jsp");

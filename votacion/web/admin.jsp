@@ -39,33 +39,13 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form action= "UserController" method="post" class="login100-form validate-form">
-					<span class="login100-form-title p-b-34">
-						
-                                                iniciar Sesion
-					</span>
-                                    
-					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="dni">
-						<input id="first-name" class="input100" type="text" name="dni" placeholder="DNI">
-						<span class="focus-input100"></span>
-					</div>
-					
-					
-					<div class="container-login100-form-btn">
-						<button type="submit" value="submit"class="login100-form-btn">
-							Iniciar Sesion
-						</button>
-					</div>
-                                    
-
-					
-
+				
 					<div class="w-full text-center">
 						<a href="signup.jsp" class="txt3">
-							Registrarse
+							Registrar Persona
 						</a>
 					</div>
-				</form>
+				
 
 				<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
 			</div>

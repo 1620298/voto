@@ -22,12 +22,12 @@ public class UserDAO {
         Statement stmt=null;
         
         String dni=bean.getDni();
-        String password=bean.getPassword();
         
-            String searchQuery="select*from persona where dni= '"+ dni+ "' AND password='"+password+"' ";
+        
+            String searchQuery="select*from persona where dni= '"+ dni+ "'";
         
         System.out.println("Your dni is "+ dni);
-        System.out.println("Your password is "+ password);
+        
         System.out.println("Query "+ searchQuery);
         
         
@@ -49,7 +49,7 @@ public class UserDAO {
                     
                 System.out.println("welcome "+ firstname);
                 bean.setFirstname(firstname);
-                bean.setLastname(lastname); 
+                bean.setLastname(lastname);
                     
                     
                 bean.setValid(true);
@@ -103,7 +103,7 @@ public class UserDAO {
         Statement stmt=null;
         
         String dni=bean.getDni();
-        String password=bean.getPassword();
+        
         String firstname=bean.getFirstname();
         String lastname=bean.getLastname();
         String ubigeo=bean.getUbigeo();
@@ -115,12 +115,12 @@ public class UserDAO {
         
         
         
-        String insertQuery="insert into persona (dni, nombres, apellidos, ubigeo, direccion, sexo, estado_civil, fecha_caducidad, password) values('"+dni+"', '"+firstname+"', '"+lastname+"', '"+ubigeo+"', '"+direccion+"', '"+sexo+"', '"+estado_civil+"', '"+fecha_caducidad+"', '"+password+"')";
+        String insertQuery="insert into persona (dni, nombres, apellidos, ubigeo, direccion, sexo, estado_civil, fecha_caducidad) values('"+dni+"', '"+firstname+"', '"+lastname+"', '"+ubigeo+"', '"+direccion+"', '"+sexo+"', '"+estado_civil+"', '"+fecha_caducidad+"')";
         
         System.out.println("Your firstname is "+ firstname);
         System.out.println("Your lastname is "+ lastname);
         System.out.println("Your dni is "+ dni);
-        System.out.println("Your password is "+ password);
+        
         
         
         

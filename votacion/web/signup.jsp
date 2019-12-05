@@ -99,10 +99,7 @@
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="Direccion" name="direccion">
                         </div>
-                        
-                        <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Contraseña" name="pw">
-                        </div>
+                     
                         <div class="p-t-30">
                             <button class="btn btn--radius btn--green" type="submit">Registrarse</button>
                         </div>

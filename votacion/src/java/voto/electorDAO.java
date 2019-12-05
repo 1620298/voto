@@ -51,7 +51,15 @@ public class electorDAO {
             
             do{
                 String id_persona=rs.getString("id_persona");
+                
+                    
+                    
+                    
+                    
+                System.out.println("welcome "+ id_persona);
                 bean.setId_persona(id_persona);
+                
+                
                 
                 
                 String insertQuery="insert into elector (id_persona, id_mesa) values('"+id_persona +"', '"+id_mesa +"')";
@@ -64,7 +72,13 @@ public class electorDAO {
                 return true;
             }
             
-           
+            
+            
+            
+            
+            
+            
+            
         }
         catch(Exception ex){
             System.out.println("Sign up failed: An exception has ocurred "+ ex);
