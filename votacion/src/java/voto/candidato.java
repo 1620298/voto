@@ -14,33 +14,27 @@ import java.util.Vector;
 public class candidato extends UserDTO{
     
     private String id_candidato;
-    private String id_persona;    
+    
     private String tipo;
+    private String foto;
     private String id_partido;
     
     
     
     
-    public boolean valid;
+    
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
 
     
 
-    public boolean isValid() {
-        return valid;
-    }
-
-    public void setValid(boolean valid) {
-        this.valid = valid;
-    }
-
-    public String getId_persona() {
-        return id_persona;
-    }
-
-    public void setId_persona(String id_persona) {
-        this.id_persona = id_persona;
-    }
-
+    
     public String getId_candidato() {
         return id_candidato;
     }

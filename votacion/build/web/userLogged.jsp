@@ -17,6 +17,19 @@
             <% UserDTO currentUser = (UserDTO)session.getAttribute("currentSessionUser");%>
             
             Welcome <%= currentUser.getFirstname() + "  "+ currentUser.getLastname()%>
+            <div class="w-full text-center">
+                <form action="servletvoto">
+                    <select name="presidente">
+                                            <option disabled="disabled" selected="selected">Presidente</option>
+                                            <option>Accion Popular</option>
+                                            <option>APRA</option>
+                                            <option>Fuerza Popular</option>
+                                            
+                                        </select>
+                    <button class="btn btn--radius btn--green" type="submit">Realizar Voto</button>
+                </form>
+			
+            </div>
         </center>
     </body>
 </html>

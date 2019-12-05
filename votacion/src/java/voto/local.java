@@ -11,8 +11,8 @@ package voto;
  */
 public class local {
     private String id_local;
-    private String direccion;
     
+    private String direccion;
     private String ubigeo;
 
     public String getId_local() {

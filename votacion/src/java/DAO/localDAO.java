@@ -26,7 +26,6 @@ public class localDAO {
         Statement stmt=null;
         
         String direccion=bean.getDireccion();
-        
         String ubigeo=bean.getUbigeo();
         
         

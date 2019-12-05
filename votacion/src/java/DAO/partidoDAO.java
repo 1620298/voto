@@ -28,13 +28,13 @@ public class partidoDAO {
         Statement stmt=null;
         
         
-        String id_partido=bean.getId_partido();
+      
         String descripcion=bean.getDescripcion();
         String logo=bean.getLogo();
         String nombre=bean.getNombre();
         
         
-        String insertQuery="insert into partido (id_partido, descripcion, logo, nombre) values('"+id_partido+"', '"+descripcion+"', '"+logo+"', '"+nombre+"')";
+        String insertQuery="insert into partido (descripcion, logo, nombre) values('"+descripcion+"', '"+logo+"', '"+nombre+"')";
         
        
         

@@ -45,7 +45,66 @@
 							Registrar Persona
 						</a>
 					</div>
-				
+                            <div class="w-full text-center">
+						<a href="verpersonas.jsp" class="txt3">
+							Ver personas
+						</a>
+					</div>
+                            <div class="w-full text-center">
+						<a href="registrarelector.jsp" class="txt3">
+							Registrar Elector
+						</a>
+                                </div>
+                            <div class="w-full text-center">
+                                <a href="verelector.jsp" class="txt3">
+							Ver Elector
+						</a>
+                            </div>
+                                            <div class="w-full text-center">
+						<a href="registrarlocal.jsp" class="txt3">
+							Registrar Local
+						</a>
+					</div>
+                            <div class="w-full text-center">
+						<a href="verlocal.jsp" class="txt3">
+							Ver Local
+						</a>
+					</div>
+                            <div class="w-full text-center">
+						<a href="registrarmesa.jsp" class="txt3">
+							Registrar Mesa
+						</a>
+					</div>
+                            <div class="w-full text-center">
+						<a href="vermesa.jsp" class="txt3">
+							Ver Mesa
+						</a>
+					</div>
+			<div class="w-full text-center">
+						<a href="registrarpartido.jsp" class="txt3">
+							Registrar Partido
+						</a>
+					</div>
+                            <div class="w-full text-center">
+						<a href="verpartido.jsp" class="txt3">
+							Ver Partido
+						</a>
+					</div>
+                            <div class="w-full text-center">
+						<a href="registrarcandidato.jsp" class="txt3">
+							Registrar Candidato
+						</a>
+					</div>
+                            <div class="w-full text-center">
+						<a href="vercandidato.jsp" class="txt3">
+							Ver Candidato
+						</a>
+					</div>
+                            <div class="w-full text-center">
+						<a href="resultados.jsp" class="txt3">
+							VER RESULTADOS
+						</a>
+					</div>
 
 				<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
 			</div>
