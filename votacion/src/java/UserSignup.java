@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import voto.UserDAO;
+import DAO.UserDAO;
 import voto.UserDTO;
 
 /**
@@ -45,14 +45,10 @@ public class UserSignup extends HttpServlet {
             user.setLastname(request.getParameter("ln"));
             user.setUbigeo(request.getParameter("ubigeo"));
             user.setDireccion(request.getParameter("direccion"));
-            user.setSexo(request.getParameter("genero"));
+            user.setSexo(request.getParameter("sexo"));
             user.setEstado_civil(request.getParameter("estado_civil"));
             user.setDni(request.getParameter("dni"));
             user.setFecha_caducidad(request.getParameter("fecha_caducidad"));
-            
-            
-            
-            
             
             
             
