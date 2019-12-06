@@ -79,8 +79,8 @@
                                 
                                     <tr>
                                         <td><%= rs.getString("id_partido")%></td>
-                                        <td><%= rs.getString("descripcion")%></td>
-                                        <td><%= rs.getString("logo")%></td>
+                                        <td><%= rs.getString("descripcion")%>
+                                        <td><img src="</td><%= rs.getString("logo")%>" width="30" height="30"> </td>
                                         <td><%= rs.getString("nombre")%></td>
                                         <td>
                                             <a href="eliminarpartido.jsp?id_partido=<%= rs.getString("id_partido")%>">Eliminar</a>
