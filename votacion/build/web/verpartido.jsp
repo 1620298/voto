@@ -62,7 +62,9 @@
                                 
                                 
                             %>
+                            
                             <div>
+                                
                                 <table>
                                     <tr>
                                         <th>id_partido</th>
